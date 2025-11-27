@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าออนไลน์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ร้านค้าออนไลน์</h1>
+        <a href="cart.html" id="cart-link">🛒 ตะกร้า: <span id="cart-count">0</span></a>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product" data-name="สินค้า 1" data-price="100">
+                <img src="https://via.placeholder.com/150" alt="สินค้า 1">
+                <h2>สินค้า 1</h2>
+                <p>ราคา: 100 บาท</p>
+                <button onclick="addToCart('สินค้า 1', 100)">เพิ่มลงตะกร้า</button>
+            </div>
+
+            <div class="product" data-name="สินค้า 2" data-price="200">
+                <img src="https://via.placeholder.com/150" alt="สินค้า 2">
+                <h2>สินค้า 2</h2>
+                <p>ราคา: 200 บาท</p>
+                <button onclick="addToCart('สินค้า 2', 200)">เพิ่มลงตะกร้า</button>
+            </div>
+
+            <div class="product" data-name="สินค้า 3" data-price="300">
+                <img src="https://via.placeholder.com/150" alt="สินค้า 3">
+                <h2>สินค้า 3</h2>
+                <p>ราคา: 300 บาท</p>
+                <button onclick="addToCart('สินค้า 3', 300)">เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
